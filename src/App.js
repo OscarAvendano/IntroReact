@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import PrimerComponente from './tiposcomponentes';
 
+
+let nombre = "juan";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <PrimerComponente/>
+   <h1>2 + 2 = {2+2} </h1>
+    <p>Nombre: {nombre} </p>
+   </>
   );
 }
 
